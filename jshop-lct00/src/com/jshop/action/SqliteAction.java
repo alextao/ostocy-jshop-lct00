@@ -53,6 +53,11 @@ public class SqliteAction extends SQLiteDBHelper {
 	public void setPath(String path) {
 		this.path = path;
 	}
+	/**
+	 * 创建sqlite
+	 * @return
+	 * @throws SQLException
+	 */
 	@Action(value="createTable",results={@Result(name="json",type="json")})
 	public String createTable() throws SQLException{
 		try {
